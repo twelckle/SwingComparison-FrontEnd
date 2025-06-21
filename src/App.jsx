@@ -25,7 +25,7 @@ function App() {
     formData.append("video", videoFile);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/analyze", {
+      const response = await fetch("https://swingcomparison-backend.onrender.com/analyze", {
         method: "POST",
         body: formData,
       });
