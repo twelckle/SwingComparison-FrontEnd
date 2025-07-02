@@ -1,0 +1,167 @@
+@keyframes rollBall {
+    0% {
+        transform: translateX(0vw) translateY(-0.2vw);
+    }
+
+    2.5% {
+        transform: translateX(2.18125vw) translateY(-0.6vw);
+    }
+
+    5% {
+        transform: translateX(4.3625vw) translateY(-1.0vw);
+    }
+
+    7.5% {
+        transform: translateX(6.54375vw) translateY(-1.5vw);
+    }
+
+    10% {
+        transform: translateX(8.725vw) translateY(-2.1vw);
+    }
+
+    12.5% {
+        transform: translateX(10.90625vw) translateY(-2.7vw);
+    }
+
+    15% {
+        transform: translateX(13.0875vw) translateY(-3.3vw);
+    }
+
+    17.5% {
+        transform: translateX(15.26875vw) translateY(-3.9vw);
+    }
+
+    20% {
+        transform: translateX(17.45vw) translateY(-4.5vw);
+    }
+
+    22.5% {
+        transform: translateX(19.63125vw) translateY(-5.1vw);
+    }
+
+    25% {
+        transform: translateX(21.8125vw) translateY(-5.7vw);
+    }
+
+    27.5% {
+        transform: translateX(23.99375vw) translateY(-6.3vw);
+    }
+
+    30% {
+        transform: translateX(26.175vw) translateY(-6.8vw);
+    }
+
+    32.5% {
+        transform: translateX(28.35625vw) translateY(-7.2vw);
+    }
+
+    35% {
+        transform: translateX(30.5375vw) translateY(-7.6vw);
+    }
+
+    37.5% {
+        transform: translateX(32.71875vw) translateY(-7.9vw);
+    }
+
+    40% {
+        transform: translateX(34.9vw) translateY(-8.1vw);
+    }
+
+    42.5% {
+        transform: translateX(37.08125vw) translateY(-8.3vw);
+    }
+
+    45% {
+        transform: translateX(39.2625vw) translateY(-8.4vw);
+    }
+
+    47.5% {
+        transform: translateX(41.44375vw) translateY(-8.45vw);
+    }
+
+    50% {
+        transform: translateX(43.625vw) translateY(-8.5vw);
+    }
+
+    52.5% {
+        transform: translateX(45.80625vw) translateY(-8.45vw);
+    }
+
+    55% {
+        transform: translateX(47.9875vw) translateY(-8.4vw);
+    }
+
+    57.5% {
+        transform: translateX(50.16875vw) translateY(-8.3vw);
+    }
+
+    60% {
+        transform: translateX(52.35vw) translateY(-8.1vw);
+    }
+
+    62.5% {
+        transform: translateX(54.53125vw) translateY(-7.9vw);
+    }
+
+    65% {
+        transform: translateX(56.7125vw) translateY(-7.6vw);
+    }
+
+    67.5% {
+        transform: translateX(58.89375vw) translateY(-7.2vw);
+    }
+
+    70% {
+        transform: translateX(61.075vw) translateY(-6.8vw);
+    }
+
+    72.5% {
+        transform: translateX(63.25625vw) translateY(-6.3vw);
+    }
+
+    75% {
+        transform: translateX(65.4375vw) translateY(-5.7vw);
+    }
+
+    77.5% {
+        transform: translateX(67.61875vw) translateY(-5.1vw);
+    }
+
+    80% {
+        transform: translateX(69.8vw) translateY(-4.5vw);
+    }
+
+    82.5% {
+        transform: translateX(71.98125vw) translateY(-3.9vw);
+    }
+
+    85% {
+        transform: translateX(74.1625vw) translateY(-3.3vw);
+    }
+
+    87.5% {
+        transform: translateX(76.34375vw) translateY(-2.7vw);
+    }
+
+    90% {
+        transform: translateX(78.525vw) translateY(-2.1vw);
+    }
+
+    92.5% {
+        transform: translateX(80.70625vw) translateY(-1.5vw);
+    }
+
+    95% {
+        transform: translateX(82.8875vw) translateY(-1.0vw);
+    }
+
+    97.5% {
+        transform: translateX(85.06875vw) translateY(-0.6vw);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(87.25vw) translateY(-0.2vw);
+        opacity: 0;
+    }
+}
