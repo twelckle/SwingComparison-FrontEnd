@@ -54,7 +54,7 @@
 }
 
 .landing-video {
-    flex: 1;
+    /* flex: 1; */
     min-width: 300px;
     display: flex;
     justify-content: center;

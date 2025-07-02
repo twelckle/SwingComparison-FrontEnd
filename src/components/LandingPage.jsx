@@ -56,17 +56,13 @@ function LandingPage({ onTryNowClick }) {
                 }}>
                     <div className="landing-content" style={{
                         display: "flex",
-                        flex: 1,
                         flexDirection: "row",
                         gap: "2rem",
                         justifyContent: "center",
                         alignItems: "center",
-                        width: "100%",
                         flexWrap: "wrap"
                     }}>
                         <div style={{
-                            flex: "1",
-                            minWidth: "48%",
                             display: "flex",
                             flexDirection: "column",
                             justifyContent: "space-between",
@@ -101,44 +97,31 @@ function LandingPage({ onTryNowClick }) {
                                 </button>
                             </div>
                         </div>
-                        <div className="landing-video" style={{
-                            flex: "1",
-                            minWidth: "48%",
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            alignSelf: "center",
-                            marginTop: "0",
-                            position: "relative",
-                            backgroundColor: "#000",
-                            borderRadius: "2rem",
-                            padding: "1rem",
-                            width: "320px",
-                            height: "700px",
-                            boxShadow: "0 10px 30px rgba(0,0,0,0.3)"
-                        }}>
-                            {/* iPhone bezel mockup */}
-                            <div style={{
-                                width: "100%",
-                                height: "100%",
+                        <div
+                            className="landing-video"
+                            style={{
+                                width: "auto",
+                                height: "550px",
+                                backgroundColor: "#000",
                                 borderRadius: "2rem",
-                                overflow: "hidden",
-                                position: "relative",
-                                backgroundColor: "#111",
+                                padding: "1rem",
+                                boxShadow: "0 10px 30px rgba(0,0,0,0.3)",
                                 display: "flex",
                                 alignItems: "center",
-                                justifyContent: "center"
-                            }}>
-                                <img
-                                    src={`/proswing/pro_frame_${frameIndex}.png`}
-                                    alt={`Pro swing frame ${frameIndex}`}
-                                    style={{
-                                        width: "100%",
-                                        height: "100%",
-                                        objectFit: "cover"
-                                    }}
-                                />
-                            </div>
+                                justifyContent: "center",
+                                overflow: "hidden",
+                                position: "relative",
+                            }}
+                        >
+                            <img
+                                src={`/proswing/pro_frame_${frameIndex}.png`}
+                                alt={`Pro swing frame ${frameIndex}`}
+                                style={{
+                                    height: "100%",
+                                    objectFit: "cover",
+                                    borderRadius: "1.5rem",
+                                }}
+                            />
                         </div>
                     </div>
                 </main>
