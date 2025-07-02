@@ -3,6 +3,7 @@ import "./LandingPage.css"; // Optional, if you want custom styles
 
 function LandingPage({ onTryNowClick }) {
     const [frameIndex, setFrameIndex] = useState(0);
+    const [frames, setFrames] = useState([]);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -15,9 +16,10 @@ function LandingPage({ onTryNowClick }) {
         const images = [];
         for (let i = 0; i < 60; i++) {
             const img = new Image();
-            img.src = `/assets/proswing/pro_frame_${i}.png`;
+            img.src = `/proswing/pro_frame_${i}.png`;
             images.push(img);
         }
+        setFrames(images);
     }, []);
 
     return (
@@ -113,15 +115,17 @@ function LandingPage({ onTryNowClick }) {
                                 position: "relative",
                             }}
                         >
-                            <img
-                                src={`/proswing/pro_frame_${frameIndex}.png`}
-                                alt={`Pro swing frame ${frameIndex}`}
-                                style={{
-                                    height: "100%",
-                                    objectFit: "cover",
-                                    borderRadius: "1.5rem",
-                                }}
-                            />
+                            {frames.length > 0 && (
+                                <img
+                                    src={frames[frameIndex].src}
+                                    alt={`Pro swing frame ${frameIndex}`}
+                                    style={{
+                                        height: "100%",
+                                        objectFit: "cover",
+                                        borderRadius: "1.5rem",
+                                    }}
+                                />
+                            )}
                         </div>
                     </div>
                 </main>
