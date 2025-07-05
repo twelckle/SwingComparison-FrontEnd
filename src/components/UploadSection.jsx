@@ -26,8 +26,8 @@ const UploadSection = ({ onAnalysisComplete }) => {
             const formData = new FormData();
             formData.append('video', file);
 
-            const response = await axios.post('https://swingcomparison-backend.onrender.com/analyze', formData, {
-            // const response = await axios.post("http://127.0.0.1:5000/analyze", formData, {
+            // const response = await axios.post('https://swingcomparison-backend.onrender.com/analyze', formData, {
+            const response = await axios.post("http://127.0.0.1:5000/analyze", formData, {
                 headers: { 'Content-Type': 'multipart/form-data' },
             });
 
@@ -52,7 +52,7 @@ const UploadSection = ({ onAnalysisComplete }) => {
     }, [loading]);
 
     return (
-        <section id="upload" className="flex flex-col items-center py-20 bg-gray-100">
+        <section id="upload" className="flex flex-col items-center py-20 bg-white">
             <h2 className="text-3xl font-semibold mb-6">Upload Your Swing</h2>
             {!preview && (
                 <div

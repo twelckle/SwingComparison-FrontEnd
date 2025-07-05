@@ -3,6 +3,7 @@ import UploadSection from "./components/UploadSection";
 import LandingPage from "./components/LandingPage";
 import Header from "./components/Header";
 import AnalysisResults from "./components/AnalysisResults";
+import VideoShowcase from "./components/VideoShowcase";
 
 function App() {
   const uploadRef = useRef(null);
@@ -25,8 +26,8 @@ function App() {
     formData.append("video", videoFile);
 
     try {
-      const response = await fetch("https://swingcomparison-backend.onrender.com/analyze", {
-        // const response = await fetch("http://127.0.0.1:5000/analyze", {
+      // const response = await fetch("https://swingcomparison-backend.onrender.com/analyze", {
+      const response = await fetch("http://127.0.0.1:5000/analyze", {
         method: "POST",
         body: formData,
       });
@@ -36,6 +37,7 @@ function App() {
       }
 
       const data = await response.json();
+      console.log("Analysis response from backend:", data);
       setAnalysisResult(data);
 
     } catch (error) {
@@ -51,6 +53,7 @@ function App() {
     <>
       <Header />
       <LandingPage onTryNowClick={handleTryNowClick} />
+      <VideoShowcase />
       <div ref={uploadRef}>
         <UploadSection onAnalysisComplete={handleAnalysisComplete} onUpload={sendVideoToBackend} />
       </div>
